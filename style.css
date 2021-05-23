@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #f5f6f7;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.heading-sub-title,
+.heading-title {
+  background-color: #017f66;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: tomato;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-shadow: #f5f6f7;
+  border-radius: 100%;
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1400px, 80%);
+  margin: auto;
+}
+
+.pricing-card {
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: 0.3s linear;
+}
+
+.pricing-card-header {
+  background-color: tomato;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+  box-shadow: 0 0 0 32em tomato;
+}
+
+.price {
+  font-size: 70px;
+  color: tomato;
+  margin: 40px 0;
+  transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+  font-size: 12px;
+  font-weight: 700;
+}
+ul {
+  background-color: #017f66;
+  color: #fff;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+  color: #fff;
+}
+
+.pricing-card li {
+  font-size: 12px;
+  padding: 10px 0;
+  text-transform: lowercase;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid tomato;
+  color: tomato;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+.order-btn:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .pricing-card {
+    flex: 50%;
+  }
+}
